@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/grey">
 
     <androidx.recyclerview.widget.RecyclerView
         android:paddingTop="@dimen/text_size_32"
@@ -22,7 +23,7 @@
         android:id="@+id/verticalPassengersRecyclerView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/spacing_16"
+        android:padding="@dimen/spacing_16"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

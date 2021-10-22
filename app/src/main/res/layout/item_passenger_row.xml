@@ -17,14 +17,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hipolabs Airline" />
+        tools:text="Onuralp AVCI" />
 
     <TextView
         android:id="@+id/passengerTripsTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/spacing_12"
-        android:text="Trips: "
+        android:text="@string/trips"
         android:textAppearance="@style/Text.Body.Body2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passengerNameTextView" />
@@ -33,6 +33,7 @@
         android:id="@+id/passengerTripsTextView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginStart="@dimen/spacing_4"
         android:textAppearance="@style/Text.Body.Body1"
         app:layout_constraintBottom_toBottomOf="@id/passengerTripsTitleTextView"
         app:layout_constraintStart_toEndOf="@id/passengerTripsTitleTextView"
