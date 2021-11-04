@@ -1,7 +1,7 @@
 # Impelementing Pagination in Android
 > This is a sample android app to show how to implement pagination to an android app.
 
-Aim of this project is to teach how to implement pagination to an android app. There are various solutions for pagination, and one them is to use Paging 3 library. It is easy to implement, and compatible with various devices.
+Aim of this project is to teach how to implement pagination to an android app. There are various solutions for pagination, and one them is to use Paging 3 library. It is easy to implement, and compatible with various devices. Also, this example demonstrates how to implement pagination for fetching data from an api which supports pagination. It is also possible to implement pagination to other data sources, but it is not the focus of this demo.
 
 ## Screenshots
 <div style="display: inline-block;">
