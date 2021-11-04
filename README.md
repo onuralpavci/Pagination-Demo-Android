@@ -4,7 +4,7 @@
 This project aims to teach how to implement pagination to an android app. There are various solutions for pagination, and one of them is to use Paging 3 Library. It is easy to implement, and compatible with various devices. Also, this example demonstrates how to implement pagination for fetching data from an API that supports pagination. It is also possible to implement pagination to other data sources, but it is not the focus of this demo.
 
 ## About the application
-This is a demo app to show passengers on a flight. They are displayed in two different recyclerviews (one vertical, and one horizontal). The data is fetched from a [passenger api][api] which supports pagination. The endpoint requires page and page size as parameters that are easily calculated and provided to the endpoint with the help of the paging library.
+This is a demo app to show passengers on a flight. They are displayed in two different recyclerviews (one vertical, and one horizontal). The data is fetched from a [passenger API][api] which supports pagination. The endpoint requires page and page size as parameters that are easily calculated and provided to the endpoint with the help of the paging library.
 
 ## Screenshots
 <div style="display: inline-block;">
@@ -14,7 +14,7 @@ This is a demo app to show passengers on a flight. They are displayed in two dif
 ## Documentation
 1 - Paging 3: The Paging Library helps you load and display pages of data from a larger dataset from local storage or over network. This approach allows your app to use both network bandwidth and system resources more efficiently. Link -> [Paging 3.0][paging]
 
-2- Fake Rest API: This API is used to fetch the data of passengers. It is a fake data provider API that supports pagination. -> Link [Passenger api][api]
+2- Fake Rest API: This API is used to fetch the data of passengers. It is a fake data provider API that supports pagination. -> Link [Passenger API][api]
 
 
 ## Tutorial Video
