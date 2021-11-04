@@ -11,12 +11,12 @@ import javax.inject.Singleton
 class PassengerRepository @Inject constructor(
     private val passengerApi: PassengerApi,
 ) {
-    fun getPassengersPagingFlow() = Pager(
+    fun getPassengersPager() = Pager(
         config = PagingConfig(
             pageSize = PassengersPagingSource.PASSENGERS_PAGE_SIZE,
             initialLoadSize = PassengersPagingSource.PASSENGERS_PAGE_SIZE,
             enablePlaceholders = false,
         ),
         pagingSourceFactory = { PassengersPagingSource(passengerApi) }
-    ).flow
+    )
 }

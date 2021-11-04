@@ -17,7 +17,8 @@ class HomeViewModel @Inject constructor(
 
     fun getPassengers(): Flow<PagingData<PassengerResponse>> {
         return passengerRepository
-            .getPassengersPagingFlow()
+            .getPassengersPager()
+            .flow
             .cachedIn(viewModelScope)
     }
 }
