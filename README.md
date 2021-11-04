@@ -3,6 +3,9 @@
 
 Aim of this project is to teach how to implement pagination to an android app. There are various solutions for pagination, and one them is to use Paging 3 library. It is easy to implement, and compatible with various devices. Also, this example demonstrates how to implement pagination for fetching data from an api which supports pagination. It is also possible to implement pagination to other data sources, but it is not the focus of this demo.
 
+# About the applicaton
+This is a demo app to show passengers of a flight. They are displayed in two different recyclerviews (one vertical, and one horizontal). The data is fetched from a passenger [api][youtube] which supports pagination. The endpoint requires page, and page size as paramters which are easily calculated and provided to the endpoint with the help of paging library.
+
 ## Screenshots
 <div style="display: inline-block;">
   <img src="images/screenshot1.png" width="200" height="400">
@@ -19,5 +22,6 @@ Link -> [Youtube video][youtube]
 
 <!-- Markdown link & img dfn's -->
 [paging]: https://developer.android.com/topic/libraries/architecture/paging/v3-overview
+[api]: https://www.instantwebtools.net/fake-rest-api
 [youtube]: https://www.youtube.com
 
