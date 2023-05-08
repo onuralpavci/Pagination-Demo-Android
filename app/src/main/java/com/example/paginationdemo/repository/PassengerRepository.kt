@@ -1,22 +1,20 @@
 package com.example.paginationdemo.repository
 
+import com.example.paginationdemo.utils.CustomDataSource
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
-import com.example.paginationdemo.data.network.api.PassengerApi
 import com.example.paginationdemo.data.pagingsource.PassengersPagingSource
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class PassengerRepository @Inject constructor(
-    private val passengerApi: PassengerApi,
-) {
+class PassengerRepository @Inject constructor() {
     fun getPassengersPager() = Pager(
         config = PagingConfig(
-            pageSize = PassengersPagingSource.PASSENGERS_PAGE_SIZE,
-            initialLoadSize = PassengersPagingSource.PASSENGERS_PAGE_SIZE,
+            pageSize = PassengersPagingSource.EXPECTED_PERSON_PAGE_SIZE,
+            initialLoadSize = PassengersPagingSource.EXPECTED_PERSON_PAGE_SIZE,
             enablePlaceholders = false,
         ),
-        pagingSourceFactory = { PassengersPagingSource(passengerApi) }
+        pagingSourceFactory = { PassengersPagingSource(CustomDataSource()) }
     )
 }

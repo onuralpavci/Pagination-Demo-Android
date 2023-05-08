@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_8"
         android:textAppearance="@style/Text.Headings.H2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,31 +24,22 @@
         android:id="@+id/passengerTripsTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/spacing_12"
-        android:text="@string/trips"
+        android:text="@string/id"
+        android:gravity="center"
         android:textAppearance="@style/Text.Body.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passengerNameTextView" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/passengerTripsTextView"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/passengerTripsTextView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="@dimen/spacing_4"
+        android:gravity="center"
         android:textAppearance="@style/Text.Body.Body1"
-        app:layout_constraintBottom_toBottomOf="@id/passengerTripsTitleTextView"
-        app:layout_constraintStart_toEndOf="@id/passengerTripsTitleTextView"
-        app:layout_constraintTop_toTopOf="@id/passengerTripsTitleTextView"
-        tools:text="56" />
-
-    <TextView
-        android:id="@+id/airlineNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:textAppearance="@style/Text.Body.Body2"
-        app:layout_constraintBottom_toBottomOf="@id/passengerTripsTitleTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/passengerTripsTitleTextView"
-        tools:text="Hipolabs Airline" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="100" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
